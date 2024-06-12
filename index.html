@@ -1,6 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <p>"Hello world!"</p>
+<body onload="window.scrollTo(0, 0)">
+    <header>
+        <div class="container">
+          <img src="images/HuskyIcon_TwoColor.png" alt="PSTDL">
+          <img src="images/logo_black_circ.svg" alt="PSTDL">
+          <h1>Caleb L. Bigham</h1>
+          <nav>
+              <a href="https://www.linkedin.com/in/CalebBigham" target="_blank">LinkedIn</a>
+              <a href="https://github.com/CalebBigham" target="_blank">GitHub</a>
+              <a href="https://CalebBigham.com" target="_blank">Personal Website</a>
+          </nav>
+        </div>
+    </header>
+    <!-- <div id="page-navigation">
+      <div>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#experience">Professional Experience</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div> -->
+    <section id="about-me" class="about-me" width="100%">
+        <div class="container">
+            <h2>About Me</h2>
+            <section class="side-by-side">
+              <div id="left"><img src="images/portrait.JPG" alt="portrait"></div>
+              <div id="right">
+                <p>
+                  I am a Junior at Michigan Technological University where I study Robotics Engineering with a minor in Mathematical Sciences. I have a deep passion for engineering, specifically spacefaring technology!
+                </p>
+                <p>
+                  Currently, I serve as a research engineer at the competitive Planetary Surface Technology Development Laboratory (also known as Huskyworks), a technology accelerator specialized for in-situ resource utilization.
+                  My area of expertise in the lab is power management engineering, avionics, and microcontrollers.
+                  I headed the development of our team's custom battery management system submission to NASA's Watts on the Moon challenge in 2024. In order to succeed in Huskyworks as a sophomore engineer, I had to learn quickly and work hard!
+                </p>
+                <p>
+                  As an engineer, I stay plenty busy when not at work or school! I have a rich portfolio of solo projects to hone my skills or generate income. I'm even in the midst of the patenting process for one of my more useful ideas! Take a look at some of
+                  these projects further down the page.
+                </p>
+                <p>
+                  For my mathematical sciences minor, I study coding theory for communication with objects at astronomical distances (think martian rovers or deep-space probes like Voyager). I have an intimate knowledge of advanced numerical linear algebra and differential equations.
+                </p>
+                <ul>
+                  <li>In the summer of 2024, I was selected as a finalist candidate for NASA's Pathways Internship program at the Kennedy Space center</li>
+                  <li>Served as a tutor for both writing and engineering fundementals</li>
+                  <li>Two years of industry experience by my Junior year of school</li>
+                  <li>One of only three undergraduate researchers to be hired in their sophomore year at the PSTDL</li>
+                </ul>
+                <p>
+                  I will surprise you and your team with my skill and eagerness to learn!
+                </p>
+            </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="projects" class="projects" width="100%">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="grid-container">
+              <div class="grid-item">
+                  <a href="projects/watts-bms.html">
+                      <img src="images/watts_bms.jpg" alt="watts_bms">
+                      <footer>Lunar Power Management System</footer>
+                  </a>
+              </div>
+              <div class="grid-item">
+                <a href="project1.html">
+                    <img src="images/watts_bms.jpg" alt="watts_bms">
+                    <footer>Lunar Power Management System</footer>
+                </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience" width="100%">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <!-- Content for professional experience will go here -->
+        </div>
+    </section>
+
+    <section id="skills" class="skills" width="100%">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="grid-container">
+              <div class="grid-item">                
+                <footer>Lithium Cell Batteries</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Avionics Design</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>CAD for Static and Dynamic Bodies</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Electrical Engineering</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Programming in C, C++, Python and Lua</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>PID Tuning</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Nonlinear Controls</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Power Use Optimization</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>IoT Development and Management</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Professional Communication</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>PLC Programming</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Thermal Management</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Autonomous Motion Planning</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Development in High EMI Environment</footer>
+              </div>
+              <div class="grid-item">                
+                <footer>Front/Backend Web Development</footer>
+              </div>
+            </div>  
+        </div>
+    </section>
+    <div style="height: 100px;"></div>
 </body>
+</html>

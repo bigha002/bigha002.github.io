@@ -1,0 +1,288 @@
+.raleway-port {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.martel-regular {
+    font-family: "Martel", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Martel", serif;
+    font-size: 30px;
+    background: url('images/webb.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #E5DBD8;
+    position: relative;
+    z-index: 0;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Use the same background image */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(270deg, #16151B, #281A3E);
+    padding: 15px 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#page-navigation {
+    width: 100%;
+    background: #43325f;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+#page-navigation div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#page-navigation a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: "Oxygen", sans-serif;
+    font-weight: normal;
+    font-size: 25px;;
+    color: #E5DBD8;
+    transition: color 0.3s ease;
+}
+
+#page-navigation a:hover {
+    /* text-decoration: underline; */
+    color: #ee6c3d;
+}
+
+h2 {
+    width: 90%;
+    text-align: left; /* Center the text */
+    margin-bottom: 20px; /* Add space between the header and the grid */
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+.side-by-side {
+    width: 90%;
+    height: auto;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% auto;
+    gap: 20px;
+}
+
+.side-by-side div {
+    display: flex;
+    justify-content: center;
+}
+
+.side-by-side #right {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.side-by-side div img {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.side-by-side div p {
+    width: 100%;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container img {
+    height: 2em; /* Set height equal to the font size of the name */
+    width: auto;
+    margin-right: 15px; /* Add spacing between the logo and the name */
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Keep header items spaced */
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background: #16151ba4; /* Background color */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+}
+
+section .container > * {
+    margin-bottom: 10px; /* Add space between elements */
+}
+
+section p {
+    width: 90%;
+    text-align: left; /* Justify paragraphs to the left */
+    font-family: "Oxygen", sans-serif; /* Apply Oxygen font */
+}
+
+/* .about-me {
+    background: #16151ba4;
+    padding-bottom: 20px;
+} */
+
+nav {
+    margin-left: auto; /* Push navigation links to the right */
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #E5DBD8;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    /* text-decoration: underline; */
+    color: #ee6c3d;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 90%;
+    height: auto;
+    position: relative;
+    background: #281a3e56;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(315deg, #281A3E, #ee6c3d);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.grid-item:hover::before {
+    opacity: 1;
+}
+
+.grid-item a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+.grid-item img, .grid-item footer {
+    position: relative;
+    z-index: 1;
+}
+
+.grid-item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 2px solid #FAF9F8;
+}
+
+.grid-item footer {
+    margin-top: 10px;
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #FAF9F8;
+}
+
+.grid-item a:hover footer {
+    text-decoration: underline;
+}
