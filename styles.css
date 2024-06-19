@@ -78,36 +78,31 @@ h1 {
 }
 
 #page-navigation {
-    width: 100%;
-    background: #43325f;
+    width: 90%;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-}
-
-#page-navigation div {
-    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
 
-#page-navigation a {
-    margin-left: 20px;
+#page-navigation p {
+    margin: 0;
+    margin-left: 30px;
     text-decoration: none;
     font-family: "Oxygen", sans-serif;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 30px;
     color: #E5DBD8;
     transition: color 0.3s ease;
 }
 
-#page-navigation a:hover {
+#page-navigation p:hover {
     /* text-decoration: underline; */
-    color: #ee6c3d;
+    color: #fcce01;
 }
 
 h2 {
@@ -121,7 +116,7 @@ h2 {
 .side-by-side {
     width: 90%;
     height: auto;
-
+    background: none !important;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 40% auto;
@@ -179,7 +174,7 @@ section {
     height: 100%;
     background: #16151ba4; /* Background color */
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 section .container {
@@ -218,7 +213,7 @@ nav a {
 
 nav a:hover {
     /* text-decoration: underline; */
-    color: #ee6c3d;
+    color: #f86d3b;
 }
 
 main {
@@ -245,6 +240,10 @@ main {
     overflow: hidden;
     text-align: center;
     transition: background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .grid-item::before {
@@ -275,16 +274,16 @@ main {
 }
 
 .grid-item img {
-    width: 90%;
+    width: 85%;
     height: auto;
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    border-bottom: 2px solid #FAF9F8;
+    border-radius: 8px;
 }
 
 .grid-item footer {
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: "Oxygen", sans-serif;
     font-size: 20px;
 }
@@ -303,4 +302,15 @@ main {
 
 .grid-item a:hover footer {
     text-decoration: underline;
+}
+
+.collage {
+    width: 90%;
+    align-items: center;
+    /* display: grid; */
+}
+
+.collage img {
+    height: 100%;
+    width: auto;
 }
