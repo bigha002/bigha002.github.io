@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Weather Station</title>
+</head>
+<body>
+    <p style="font-family: 'Raleway', 'sans-serif';">Solar Powered Weather Station</p>
+    <hr class="horizontal-line">
+    <div class="text-block">
+        <p>
+            Self-sufficient power generation has fascinated me for many years, yet I have always lacked the knowledge to design a system of my own. I have a goal to one day design and build my own wind turbine
+            to provide for my off-grid home. Houghton, Michigan has plenty of wind to spare!
+        </p>
+        <p>
+            Unfortunately, my present position as a broke college student makes the dream of off-grid home ownership slightly out of reach for now, unless my landlord allows me to cut the power lines on my rental! Turning to the next best thing,
+            I designed a solar-powered weather station equipped with my newly devloped lithium ion battery management system. 
+        </p>
+    </div>
+    <section class="side-by-side" style="grid-template-columns: 40% auto;">
+        <div id="left">
+            <div class="text-block">
+                <p class="text">
+                    There are plenty of premade weather station components available for purchase that likely would've been more affordable than a DIY job, but where's the fun in that?
+                </p>
+                <p class="text">
+                    I started by designing an anemometer for windspeed measurement. It utilizes a Hall effect sensor to measure angular velocity, which can be converted to windspeed with some simple math. The cheap Hall effect sensor I purchased
+                    initially presented serious debounce issues, which I was able to fix with a small capacitor across its terminals. Inside the base of the spinner is an ESP32-based microcontroller that broadcasts its data over wifi to a Raspberry Pi
+                    sitting on my desk using the MQTT protocol.
+                </p>
+                <p>
+                    The final design of the anemometer calls for under $10 in components thanks to 3D printing and some trickery with fixing up cheap components. Measurements are most accurate in high windspeeds, as the mass of the spinner easily shrugs off light breezes.
+                </p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="../images/CellArray.png" alt="portrait">
+                <p>Our 6,566 kWhr Lithium Iron Phosphate (LFP) Battery</p>
+            </div>
+        </div> 
+    </section>
+    <section class="side-by-side" style="grid-template-columns: 1fr 1fr;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="../images/BMSDev.png" alt="portrait">
+                <p>First functional version of BMS development board</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="../images/BMSProto.png" alt="portrait">
+                <p>Populated prototype PCB for small-scale LiFePO4 testbed</p>
+            </div>
+        </div>
+    </section>
+    <div class="text-block">
+        <p>
+            My favorite part of this project, however, is the power supply. It is a modularly expandable solar-powered battery pack with 2800mAh capacity per module. This supply is more than enough to provide for the weather station and some LEDs placed around the box.
+            Inside this supply box is another ESP32 microcontroller that wirelessly transmits a constant stream of telemetry to my Raspberry Pi.
+        </p>
+        <p>
+            I dedicated an excessive amount of effort into weatherproofing the internals. The box was printed with high-quality ASA filament, which is extraordinarily resistant to UV rays, heat, and water. All wire passthroughs are water proof and drainage plugs on the bottom
+            of the box prevent standing water. I intend to use this solar-powered battery bank for a range of other outdoor projects, so ease of assembly was also high on my engineering priority list. As of June 19th 2024, the weather station has been operating
+            without interruption or maintenance for 3 months.
+        </p>
+    </div>
+    <section class="side-by-side" style="grid-template-columns: 1fr 1fr;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="" alt="portrait">
+                <p>Telemetry data over a one-hour test period</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="" alt="portrait">
+                <p>Demonstration of high discharge current cutoff circuit</p>
+            </div>
+        </div>
+    </section>
+</body>

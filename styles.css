@@ -55,15 +55,26 @@ body::after {
 
 header {
     width: 100%;
-    background: linear-gradient(270deg, #16151B, #281A3E);
+    /* background: linear-gradient(270deg, #16151B, #281A3E); */
     padding: 15px 0;
+    text-align: center;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: normal;
 }
 
 h1 {
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-    font-weight: normal;
+    font-size: 45px;
+}
+
+.horizontal-line {
+    width: 90%;
+    border: none;
+    height: 1px;
+    background-color: #E5DBD8;
+    margin: 20px 0;
 }
 
 #page-navigation {
@@ -89,7 +100,7 @@ h1 {
     text-decoration: none;
     font-family: "Oxygen", sans-serif;
     font-weight: normal;
-    font-size: 25px;;
+    font-size: 25px;
     color: #E5DBD8;
     transition: color 0.3s ease;
 }
@@ -243,9 +254,9 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(315deg, #281A3E, #ee6c3d);
+    background: linear-gradient(315deg, #281a3e85, #ee6c3da8);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
     border-radius: 8px;
     z-index: 0;
 }
@@ -264,7 +275,7 @@ main {
 }
 
 .grid-item img {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -276,6 +287,13 @@ main {
     margin-top: 10px;
     font-family: "Oxygen", sans-serif;
     font-size: 20px;
+}
+
+.role {
+    width: 100%;
+    font-family: "Martel", sans-serif;
+    font-weight: normal;
+    color: #a19b99;
 }
 
 .grid-item a {

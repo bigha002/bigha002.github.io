@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Smart Home</title>
+</head>
+<body>
+    <p style="font-family: 'Raleway', 'sans-serif';">From-Scratch Home Automation</p>
+    <hr class="horizontal-line">
+    <div class="text-block">
+        <p>
+            After the astronomical prices of the 2020-2021 global chip shortage began to fall, I bought dozens of ESP32-based microcontrollers of several varieties. At regular market conditions, a controller with 10x the processing power
+            of an Arduino Uno can go for as low as $1.50, not even to mention the addition of wireless connectivity. These cheap chips are perfect for home automation projects!
+        </p>
+    </div>
+    <section class="side-by-side" style="grid-template-columns: 40% auto;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="../images/CellArray.png" alt="portrait">
+                <p>Our 6,566 kWhr Lithium Iron Phosphate (LFP) Battery</p>
+            </div>
+        </div> 
+        <div id="right">
+            <div class="text-block">
+                <p>
+                    Thanks to the Covid-19 pandemic and distance learning, every student in the US seems to have an extra webcam collecting dust. Pair a dozen webcams with a dozen wireless computers and what do you get? A dozen cheap security cameras!
+                </p>
+                <p>
+                    I put one camera in every public room of the house (after gaining the consent of my roommates).
+                </p>
+                <p>
+                    Houghton, Michigan, boasts some of the lowest crime rates in the Midwest, making the extensive array of security cameras in my run-down college house practically unnecessary. 
+                    However, as a hobbyist maker, I've learned that a project doesn't need to be useful to be worthwhile. Besides, it's a fun party trick!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="side-by-side" style="grid-template-columns: 40% auto;">
+        <div id="left">
+            <div class="text-block">
+                <p>
+                    A Raspberry Pi in every room of the house opens the door for some really cool smart-home opportunities. Webcam streaming takes a majority of the computing resources available to a Pi, but there's still plenty left for a simple data
+                    collection/transfer routine. Firstly, I attached temperature sensors to every node in the house. Rather than spending another $5 on a premade robust temperature probe, I, in my hubris, decided to make them from scratch.
+                </p>
+                <p>
+                    Making a reliable temperature probe from cheap thermistors is more difficult than I first imagined. Who would've thought that the temperature vs. resistance function of a thermistor is complex and nonlinear! The datasheets
+                    for the particular thermistors I bought were curiously absent on the internet, meaning I had to derive my own translation function to calculate temperature. I achieved this by buying an accurate thermometer and using it to observe thermistor
+                    resistance at a handful of temperatures around the house. I then put my math minor to use and constructed a nonlinear regression based upon the data, which yielded a continuous function that could accurately translate the ADC value from the thermistor into a 
+                    usable temperature.
+                </p>
+                <p>
+                    To visualize all of this data, I wrote a python script to generate a live heatmap based on the readings from all temperature probes in the house. This heatmap, along with the security feeds, is pushed periodically to a website hosted 
+                    on yet another Raspberry Pi in my living room.
+                </p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="../images/CellArray.png" alt="portrait">
+                <p>Our 6,566 kWhr Lithium Iron Phosphate (LFP) Battery</p>
+            </div>
+        </div> 
+    </section>
+    <div class="text-block">
+        <p>
+            Using the temperature sensing platform as a template, I implemented full sensor suites into every node. I now collect air quality data, sound levels, light levels, and IR proximity readings from 9 locations around my house 24/7. I use this data to
+            place plants in optimal growth conditions, minimize sound leakage from our college band, manage heating more intelligently, and show off on my engineering portfolio.
+        </p>
+    </div>
+</body>

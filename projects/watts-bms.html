@@ -3,8 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Portfolio</title>
+    <link rel="stylesheet" href="project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Watts Project</title>
 </head>
 <body>
-    <p>Hello!</p>
+    <p style="font-family: 'Raleway', 'sans-serif';">Lithium Cell Battery Management System for Lunar Power Distribution</p>
+    <hr class="horizontal-line">
+    <section class="side-by-side" style="grid-template-columns: 40% auto;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="../images/CellArray.png" alt="portrait">
+                <p>Our 6,566 kWhr Lithium Iron Phosphate (LFP) Battery</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="text-block">
+                <p class="text">
+                    NASA's Watts on the Moon challenge invited teams from all over the US to develop power infrastructure solutions for future lunar colonies and ice mining operations on the dark side of the moon. 
+                    As a researcher for the Planetary Surface Technology Development Laboratory, a finalist competitor for the challenge, my primary responsibility in this project was to design a management system for our massive 6,566 kWhr battery array.
+                    Lithium Iron Phosphate batteries are rarely used in space due to their relatively low energy density when compared to Lithium Ion technology, but have a significant advantage in their factor of safety. LFPs are far more resilient to changes in temperature, vibration,
+                    over-current faults, and physical penetration.
+                </p>
+                <p class="text">
+                    The battery management system I designed oversees all charging/discharging operations as well as monitoring battery health for potential signs of failure.
+                    Telemetry from all 17 seperate sensor nodes is available to mission control over a custom-designed telemetry bus optimized for the lowest power consumption possible.
+                    Control logic parses the sensory information and provides crucial features:
+                </p>
+                <ul>
+                    <li>2 microsecond shutdown sequence in unacceptable discharge scenario</li>
+                    <li>High and low temperature cutoffs to optimize battery longevity</li>
+                    <li>Completely autonomous fault diagnostics and re-arming sequence</li>
+                    <li>Individual voltage monitoring for each of the 9 parallel cell groups</li>
+                </ul>
+            </div>
+        </div> 
+    </section>
+    <section class="side-by-side" style="grid-template-columns: 1fr 1fr;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="../images/BMSDev.png" alt="portrait">
+                <p>First functional version of BMS development board</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="../images/BMSProto.png" alt="portrait">
+                <p>Populated prototype PCB for small-scale LiFePO4 testbed</p>
+            </div>
+        </div>
+    </section>
+    <div class="text-block">
+        <p>
+            This project remains one of the most difficult things I have ever done, both as an engineer and as a person. I was hired by Huskyworks a mere 6 months before the final product was to be tested at NASA's Glenn Research center.
+            Low-power consumption electronics, low-level microcontroller programming, and lithium battery management were all new to me at the time, compounded with the fact that I was still a full-time student with a 17 credit hour course load.
+            In 4 months, I was able to teach myself all the necessary skills to make a battery management system from the ground up, physically construct the device, and perform the rigorous tests to procure enough data to satisfy NASA's demanding safety requirements.
+            I have since received nothing but positive feedback from NASA's panel of experts assigned to judge competition entries.
+        </p>
+    </div>
+    <section class="side-by-side" style="grid-template-columns: 1fr 1fr;">
+        <div id="left">
+            <div class="image-caption">
+                <img src="../images/BMSTelemetry.png" alt="portrait">
+                <p>Telemetry data over a one-hour test period</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="image-caption">
+                <img src="../images/BMSTelemetryCurrent.png" alt="portrait">
+                <p>Demonstration of high discharge current cutoff circuit</p>
+            </div>
+        </div>
+    </section>
 </body>
