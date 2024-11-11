@@ -10,6 +10,11 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+collections:
+  professional:
+    output: true
+    permalink: /:collection/:path
+
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -114,12 +119,15 @@ analytics:
 # Site Author
 author:
   name             : "Caleb Bigham"
-  avatar           : /assets/images/avatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Welcome to my portfolio! I am a junior Robotics Engineering major with a minor in Mathematical Sciences. I pride myself in my diverse skillset,
-  but my specialties are: embedded systems, de-noising algorithms, and PCB design."
+  avatar           : /assets/images/avatar_square.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Welcome to my portfolio! I am a junior Robotics Engineering major with a minor in Mathematical Sciences at Michigan Technological University.
+  I pride myself in my diverse skillset, but my specialties are: embedded systems, de-noising algorithms, and PCB design."
   location         : "Houghton, MI"
   email            :
   links:
+    - label: "763-453-5092"
+      icon: "fas fa-fw fa-phone"
+      url: ""
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:calebleebigham@gmail.com"
@@ -134,7 +142,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/bigha002/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
