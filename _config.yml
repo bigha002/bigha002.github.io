@@ -14,6 +14,15 @@ collections:
   professional:
     output: true
     permalink: /:collection/:path
+    defaults:
+      # _professional
+      - scope:
+          path: ""
+          type: professional
+        values:
+          layout: single
+          author_profile: true
+          share: false
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
