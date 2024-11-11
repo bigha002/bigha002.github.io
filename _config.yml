@@ -119,7 +119,7 @@ analytics:
 # Site Author
 author:
   name             : "Caleb Bigham"
-  avatar           : /assets/images/avatar_square.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/avatar_square.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Welcome to my portfolio! I am a junior Robotics Engineering major with a minor in Mathematical Sciences at Michigan Technological University.
   I pride myself in my diverse skillset, but my specialties are: embedded systems, de-noising algorithms, and PCB design."
   location         : "Houghton, MI"
