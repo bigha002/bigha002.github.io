@@ -14,15 +14,23 @@ collections:
   professional:
     output: true
     permalink: /:collection/:path
-    defaults:
-      # _professional
-      - scope:
-          path: ""
-          type: professional
-        values:
-          layout: single
-          author_profile: true
-          share: false
+    layout: single
+    author_profile: true
+    share: false
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+      values: bu
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_teaser: true
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
@@ -129,7 +137,8 @@ analytics:
 author:
   name             : "Caleb Bigham"
   avatar           : /assets/images/avatar_square.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Welcome to my portfolio! I am a junior Robotics Engineering major with a minor in Mathematical Sciences at Michigan Technological University.
+  avatar_size: 250
+  bio              : "Welcome to my portfolio!\n\nI am a junior Robotics Engineering major with a minor in Mathematical Sciences at Michigan Technological University.
   I pride myself in my diverse skillset, but my specialties are: embedded systems, de-noising algorithms, and PCB design."
   location         : "Houghton, MI"
   email            :
@@ -281,6 +290,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
